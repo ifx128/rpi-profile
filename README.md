@@ -2,9 +2,7 @@
 Custom Profile for rpi
 
 ```bash
-# curl for repository command
-# curl -L 
-printf "\nsource ~/.custom_profile\n" | tee -a .bashrc
+curl -L "https://raw.githubusercontent.com/ifx128/rpi-profile/master/.custom_profile" >> ~/.custom_profile && printf "\nsource ~/.custom_profile\n" | tee -a .bashrc
 ```
 
-<!-- todo add gist -->
+<!-- todo add git acp and stash-with-name -->
