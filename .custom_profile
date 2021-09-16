@@ -15,6 +15,7 @@ alias .3='cd ../../../'                     # Go back 3 directory levels
 alias .4='cd ../../../../'                  # Go back 4 directory levels
 alias .5='cd ../../../../../'               # Go back 5 directory levels
 alias .6='cd ../../../../../../'            # Go back 6 directory levels
-alias refresh-profile='source ~/.bashrc'
-
+alias ~="cd ~"                              # ~: Go Home
+alias c='clear'                             # c: Clear terminal display
+alias refresh-profile='source ~/.bashrc'    # refresh all terminal function definitions
 alias gist='git status && printf "\n\n" && git branch'
