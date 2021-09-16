@@ -19,3 +19,4 @@ alias ~="cd ~"                              # ~: Go Home
 alias c='clear'                             # c: Clear terminal display
 alias refresh-profile='source ~/.bashrc'    # refresh all terminal function definitions
 alias gist='git status && printf "\n\n" && git branch'
+alias open='pcmanfm'
