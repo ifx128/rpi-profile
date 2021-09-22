@@ -2,6 +2,10 @@
 #   1. TERMINAL FUNCTIONS
 #   -----------------------------
 
+#    Set Default Editor 
+#   ------------------------------------------------------------
+export EDITOR=/usr/bin/vim
+
 alias cp='cp -iv'                           # Preferred 'cp' implementation
 alias mv='mv -iv'                           # Preferred 'mv' implementation
 alias mkdir='mkdir -pv'                     # Preferred 'mkdir' implementation
@@ -20,4 +24,7 @@ alias c='clear'                             # c: Clear terminal display
 alias refresh-profile='source ~/.bashrc'    # refresh all terminal function definitions
 alias gist='git status && printf "\n\n" && git branch'
 alias open='pcmanfm'
+alias path='echo -e ${PATH//:/\\n}'         # path:         Echo all executable Paths
+mcd () { mkdir -p "$1" && cd "$1"; }        # mcd:          Makes new Dir and jumps inside
+
 # alias upgrade-pi
