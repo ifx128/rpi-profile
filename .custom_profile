@@ -21,12 +21,12 @@ alias .5='cd ../../../../../'               # Go back 5 directory levels
 alias .6='cd ../../../../../../'            # Go back 6 directory levels
 alias ~="cd ~"                              # ~: Go Home
 alias c='clear'                             # c: Clear terminal display
-alias refresh-profile='source ~/.bashrc'    # refresh all terminal function definitions
+alias refresh='source ~/.bashrc'    # refresh all terminal function definitions
+alias bashprofile='code ~/.custom_profile ~/.bashrc'
 alias gist='git status && printf "\n\n" && git branch'
 alias open='pcmanfm'
 alias path='echo -e ${PATH//:/\\n}'         # path:         Echo all executable Paths
 mcd () { mkdir -p "$1" && cd "$1"; }        # mcd:          Makes new Dir and jumps inside
-
 alias pbcopy='xsel --clipboard --input'
 alias pbpaste='xsel --clipboard --output'
 
