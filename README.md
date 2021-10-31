@@ -25,4 +25,9 @@ sudo apt update \
 && sudo apt upgrade code
 ```
 
+### Install Other deps
+```bash
+sudo apt install xclip xsel
+```
+
 <!-- todo add git acp and stash-with-name -->
