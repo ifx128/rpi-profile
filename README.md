@@ -2,10 +2,17 @@
 Custom Profile for rpi
 
 ### Install
+<!--curl -L "https://raw.githubusercontent.com/ifx128/rpi-profile/master/install.sh" >> ~/.
+&& source ~/.bashrc-->
+
 ```bash
-curl -L "https://raw.githubusercontent.com/ifx128/rpi-profile/master/.custom_profile" >> ~/.custom_profile \
-&& printf "\nsource ~/.custom_profile\n" | tee -a ~/.bashrc \
-&& source ~/.bashrc
+# For first install
+curl -L "https://raw.githubusercontent.com/ifx128/rpi-profile/master/.custom_profile" > ~/.custom_profile \
+&& printf "\nsource ~/.custom_profile\n" | tee -a ~/.bashrc 
+```
+```bash
+# For updates
+curl -L "https://raw.githubusercontent.com/ifx128/rpi-profile/master/.custom_profile" > ~/.custom_profile
 ```
 ### Install Code
 ```bash
