@@ -29,5 +29,6 @@ alias path='echo -e ${PATH//:/\\n}'         # path:         Echo all executable 
 mcd () { mkdir -p "$1" && cd "$1"; }        # mcd:          Makes new Dir and jumps inside
 alias pbcopy='xsel --clipboard --input'
 alias pbpaste='xsel --clipboard --output'
-
+alias grvv='git remote -vv'
+# alias refresh definitions from github
 # alias upgrade-pi
