@@ -31,3 +31,9 @@ sudo apt install xclip xsel
 ```
 
 <!-- todo add git acp and stash-with-name -->
+
+### Other Configuration
+```bash
+touch ~/.vimrc
+echo "set number" >> ~/.vimrc 
+```
