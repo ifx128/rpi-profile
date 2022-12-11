@@ -34,6 +34,10 @@ sudo apt install xclip xsel
 
 ### Other Configuration
 ```bash
+# add case insensitive completion
+echo 'set completion-ignore-case On' >> ~/.inputrc
+
+# set vim line numbers
 touch ~/.vimrc
-echo "set number" >> ~/.vimrc 
+echo "set number" >> ~/.vimrc
 ```
