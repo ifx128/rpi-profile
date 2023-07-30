@@ -30,7 +30,19 @@ sudo apt update \
 sudo apt install xclip xsel
 ```
 
-<!-- todo add git acp and stash-with-name -->
+### Automatic updates through unattended-upgrades
+
+```bash
+sudo apt install unattended-upgrades
+# fix is necessary for pi-buster os - https://raspberrypi.stackexchange.com/a/102350
+echo 'Unattended-Upgrade::Origins-Pattern {
+//      Fix missing Rasbian sources.
+        "origin=Debian,codename=${distro_codename},label=Debian";
+        "origin=Debian,codename=${distro_codename},label=Debian-Security";
+        "origin=Raspbian,codename=${distro_codename},label=Raspbian";
+        "origin=Raspberry Pi Foundation,codename=${distro_codename},label=Raspberry Pi Foundation";
+};' | sudo tee /etc/apt/apt.conf.d/51unattended-upgrades-raspbian
+```
 
 ### Other Configuration
 ```bash
