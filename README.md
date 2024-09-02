@@ -50,6 +50,7 @@ echo 'Unattended-Upgrade::Origins-Pattern {
 echo 'set completion-ignore-case On' >> ~/.inputrc
 
 # set vim line numbers
-touch ~/.vimrc
-echo "set number" >> ~/.vimrc
+touch ~/.vimrc \ 
+&& echo "set number" >> ~/.vimrc \
+&& echo "syntax on" >> ~/.vimrc 
 ```
