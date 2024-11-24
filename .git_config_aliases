@@ -9,4 +9,6 @@ git config --global alias.acp '!f() { git add -A && git commit -m "$@" && git pu
 && git config --global alias.stash-with-name '!f() { git stash save "$@"; }; f' \
 && git config --global alias.stash-with-name-keep-index'!f() { git stash save "$@" --keep-index; }; f' \
 && git config --global alias.undo-last-commit '!f() { git reset --soft HEAD~1; }; f' \
+&& git config --global alias.br '!f() { git branch "$@"; }; f' \  
+&& git config --global alias.merge-br '!f() { git checkout -b merge/$(git rev-parse --abbrev-ref HEAD); }; f' \  
 && git config --global alias.unstage 'reset HEAD --'
